@@ -33,38 +33,46 @@ namespace ICConsoleApp.Processes
 
                 using (OleDbCommand command = new OleDbCommand(csvQuery, connection))
                 using (OleDbDataReader reader = command.ExecuteReader())
-                using (StreamWriter writer = new StreamWriter(csvFilePath))
-                {
-                    // Write the header line to the CSV file
-                    writer.WriteLine("CustomerName,AccountNumber,CustomerAddress,CustomerCity,CustomerState,CustomerZip,BillDate,BillNumber,BillAmount,FormatGuid,AccountBalance,DueDate,ServiceAddress,FirstEmailDate,SecondEmailDate");
-
-                    // Iterate over the reader and write the data to the CSV file
-                    while (reader.Read())
+                    if (reader.HasRows)
                     {
-                        // Retrieve the values from the reader
-                        string customerName = reader.GetString(0);
-                        string accountNumber = reader.GetString(1);
-                        string customerAddress = reader.GetString(2);
-                        string customerCity = reader.GetString(3);
-                        string customerState = reader.GetString(4);
-                        string customerZip = reader.GetString(5);
-                        string billDate = reader.GetDateTime(6).ToString("MM/dd/yyyy");
-                        string billNumber = reader.GetString(7);
-                        decimal billAmount = reader.GetDecimal(8);
-                        string formatGuid = reader.GetString(9);
-                        decimal accountBalance = reader.GetDecimal(10);
-                        string dueDate = reader.GetDateTime(11).ToString("MM/dd/yyyy");
-                        string serviceAddress = reader.GetString(12);
-                        string firstEmailDate = reader.GetDateTime(13).ToString("MM/dd/yyyy");
-                        string secondEmailDate = reader.GetDateTime(14).ToString("MM/dd/yyyy");
+                        using (StreamWriter writer = new StreamWriter(csvFilePath))
+                        {
 
-                        // Write the line to the CSV file
-                        writer.WriteLine($"{customerName},{accountNumber},{customerAddress},{customerCity},{customerState},{customerZip},{billDate},{billNumber},{billAmount},{formatGuid},{accountBalance},{dueDate},{serviceAddress},{firstEmailDate},{secondEmailDate}");
+                            // Write the header line to the CSV file
+                            writer.WriteLine("CustomerName,AccountNumber,CustomerAddress,CustomerCity,CustomerState,CustomerZip,BillDate,BillNumber,BillAmount,FormatGuid,AccountBalance,DueDate,ServiceAddress,FirstEmailDate,SecondEmailDate");
+
+                            // Iterate over the reader and write the data to the CSV file
+                            while (reader.Read())
+                            {
+                                // Retrieve the values from the reader
+                                string customerName = reader.GetString(0);
+                                string accountNumber = reader.GetString(1);
+                                string customerAddress = reader.GetString(2);
+                                string customerCity = reader.GetString(3);
+                                string customerState = reader.GetString(4);
+                                string customerZip = reader.GetString(5);
+                                string billDate = reader.GetDateTime(6).ToString("MM/dd/yyyy");
+                                string billNumber = reader.GetString(7);
+                                decimal billAmount = reader.GetDecimal(8);
+                                string formatGuid = reader.GetString(9);
+                                decimal accountBalance = reader.GetDecimal(10);
+                                string dueDate = reader.GetDateTime(11).ToString("MM/dd/yyyy");
+                                string serviceAddress = reader.GetString(12);
+                                string firstEmailDate = reader.GetDateTime(13).ToString("MM/dd/yyyy");
+                                string secondEmailDate = reader.GetDateTime(14).ToString("MM/dd/yyyy");
+
+                                // Write the line to the CSV file
+                                writer.WriteLine($"{customerName},{accountNumber},{customerAddress},{customerCity},{customerState},{customerZip},{billDate},{billNumber},{billAmount},{formatGuid},{accountBalance},{dueDate},{serviceAddress},{firstEmailDate},{secondEmailDate}");
+                            }
+                        }
+                    }
+                    else
+                    {
+                        throw new Exception("No data available for export.");
                     }
                 }
-
                 Console.WriteLine("Data exported to CSV file: " + csvFilePath);
             }
         }
     }
-}
+
