@@ -99,7 +99,7 @@ namespace ICConsoleApp.Processes
                         }
                     }
 
-                    //Line starting in AA indicates Bill
+                    //Line starting in HH indicates a Bill
                     if (fields[0].Substring(0, 2) == "HH")
                     {
                         int count = 0;
