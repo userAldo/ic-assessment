@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Globalization;
 using System.IO;
-using System.Reflection;
 using System.Xml.Linq;
 using System.Xml.XPath;
 
@@ -18,7 +17,6 @@ namespace ICConsoleApp.Processes
         {
             // Read the contents of the BillFile.xml file
             string xmlFilePath = filePath + "\\Files\\BillFile.xml";
-
             XDocument xmldocument = XDocument.Load(xmlFilePath);
 
             // Parse XML
@@ -30,13 +28,13 @@ namespace ICConsoleApp.Processes
             Console.WriteLine("Export File Created: " + exportFilePath);
         }
 
-        private static string GetElementText(XElement xmlElement, string xpath)
+        private string GetElementText(XElement xmlElement, string xpath)
         {
             XElement element = xmlElement.XPathSelectElement(xpath);
             return element?.Value ?? string.Empty;
         }
 
-        private static string ParseXml(XDocument xDocument)
+        private string ParseXml(XDocument xDocument)
         {
             string output = "";
 

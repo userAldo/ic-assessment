@@ -15,8 +15,8 @@ C:\Users\Alberto B\Source\Repos\ic-assessment\ICConsoleApp\ICConsoleApp\bin\Debu
 C:\Users\Alberto B\Source\Repos\ic-assessment\ICConsoleApp\ICConsoleApp\bin\Debug\ICConsoleApp.pdb
 C:\Users\Alberto B\Source\Repos\ic-assessment\ICConsoleApp\ICConsoleApp\bin\Debug\System.Data.OleDb.dll
 C:\Users\Alberto B\Source\Repos\ic-assessment\ICConsoleApp\ICConsoleApp\bin\Debug\System.Data.OleDb.xml
-C:\Users\Alberto B\Source\Repos\ic-assessment\ICConsoleApp\ICConsoleApp\obj\Debug\ICConsoleApp.csproj.AssemblyReference.cache
 C:\Users\Alberto B\Source\Repos\ic-assessment\ICConsoleApp\ICConsoleApp\obj\Debug\ICConsoleApp.csproj.CoreCompileInputs.cache
 C:\Users\Alberto B\Source\Repos\ic-assessment\ICConsoleApp\ICConsoleApp\obj\Debug\ICConsoleApp.csproj.CopyComplete
 C:\Users\Alberto B\Source\Repos\ic-assessment\ICConsoleApp\ICConsoleApp\obj\Debug\ICConsoleApp.exe
 C:\Users\Alberto B\Source\Repos\ic-assessment\ICConsoleApp\ICConsoleApp\obj\Debug\ICConsoleApp.pdb
+C:\Users\Alberto B\Source\Repos\ic-assessment\ICConsoleApp\ICConsoleApp\obj\Debug\ICConsoleApp.csproj.AssemblyReference.cache
