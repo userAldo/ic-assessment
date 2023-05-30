@@ -20,7 +20,7 @@ Using Visual Studio 2019
 5. The code begins to iterate over XML elements of type "BILL_HEADER" and extracts specific information from each element. 
 6. and lastly it uses string manipulation by cocatenating various values together using string interpolation $ and attaching them to the 'output' string
 
-### RptToMdbConverter
+## RptToMdbConverter  Key Functions
 1. Reads ('BillFile-{currentDate}.rpt') and writes data to a Microsof Access database file ("Billing.mdb').
 2. Establishes connection to Microsoft Access database using the OleDbConnection 
 3. Retrieve Maximum IDs and executes SQL queries to retrieve the hieghest ID values from the "Bills" and "Customer" tables 
@@ -29,7 +29,7 @@ Using Visual Studio 2019
 6. Then increments the highest cusomer ID and billID to ensure unique values when inserting new records.
 7. Then the console ouput displays messages on the console for cases where dupliates ccustomer or bill records are encounterd. 
 
-#### MdbToCSVConverter 
+## MdbToCSVConverter   Key Functions
 1. The code establishes a connnection to the Microsoft Access database using the 'OleDbConnection' class.
 2. It creates an SQL quere to retrieve data from the 'Customer' and  'Bills' tables. and performs a left join operation to combine related data based on the 'CustomerID' column.
 3. Retrieves data using OleDbDataReader when the code executes SQL query using the OleDbCommand.
