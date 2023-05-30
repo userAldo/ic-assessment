@@ -2,7 +2,7 @@
 # Running Solution
 Using Visual Studio 2019
 1. Select "Clone a Repository"
-2. Under Repository location use the following linke https://github.com/userAldo/ic-assessment.git and clone
+2. Under Repository location use the following link --- https://github.com/userAldo/ic-assessment.git  --- and clone
 3. Double-Click ICConsoleApp.sln
 4. In the top menu select Build->Build Solution
 5. Select Start Solution
