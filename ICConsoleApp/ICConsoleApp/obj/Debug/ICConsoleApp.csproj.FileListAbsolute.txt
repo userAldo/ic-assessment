@@ -1,0 +1,11 @@
+C:\Users\Alberto B\Desktop\InvoiceCloudAssessment\ICConsoleApp\ICConsoleApp\obj\Debug\ICConsoleApp.csproj.CoreCompileInputs.cache
+C:\Users\Alberto B\Desktop\InvoiceCloudAssessment\ICConsoleApp\ICConsoleApp\bin\Debug\Billing.mdb
+C:\Users\Alberto B\Desktop\InvoiceCloudAssessment\ICConsoleApp\ICConsoleApp\bin\Debug\ICConsoleApp.exe.config
+C:\Users\Alberto B\Desktop\InvoiceCloudAssessment\ICConsoleApp\ICConsoleApp\bin\Debug\ICConsoleApp.exe
+C:\Users\Alberto B\Desktop\InvoiceCloudAssessment\ICConsoleApp\ICConsoleApp\bin\Debug\ICConsoleApp.pdb
+C:\Users\Alberto B\Desktop\InvoiceCloudAssessment\ICConsoleApp\ICConsoleApp\bin\Debug\System.Data.OleDb.dll
+C:\Users\Alberto B\Desktop\InvoiceCloudAssessment\ICConsoleApp\ICConsoleApp\bin\Debug\System.Data.OleDb.xml
+C:\Users\Alberto B\Desktop\InvoiceCloudAssessment\ICConsoleApp\ICConsoleApp\obj\Debug\ICConsoleApp.csproj.CopyComplete
+C:\Users\Alberto B\Desktop\InvoiceCloudAssessment\ICConsoleApp\ICConsoleApp\obj\Debug\ICConsoleApp.exe
+C:\Users\Alberto B\Desktop\InvoiceCloudAssessment\ICConsoleApp\ICConsoleApp\obj\Debug\ICConsoleApp.pdb
+C:\Users\Alberto B\Desktop\InvoiceCloudAssessment\ICConsoleApp\ICConsoleApp\obj\Debug\ICConsoleApp.csproj.AssemblyReference.cache
