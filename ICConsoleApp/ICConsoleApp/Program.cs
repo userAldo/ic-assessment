@@ -1,9 +1,5 @@
 ﻿using System.IO;
-using System.Globalization;
-using System.Xml.Linq;
-using System.Xml.XPath;
 using System.Reflection;
-using System.Data.OleDb;
 using System;
 using ICConsoleApp.Processes;
 
